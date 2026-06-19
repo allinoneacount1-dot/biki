@@ -23,6 +23,11 @@ biki/
 ├── README.md               ← you are here
 ├── .gitignore
 └── brand/
+    ├── lore/               ← phase 1 — manifesto, origin, character bible
+    │   ├── README.md
+    │   ├── manifesto.md
+    │   ├── origin.md
+    │   └── character-bible.md
     ├── logo/               ← phase 2 — mark, wordmark, lockups, rules
     │   ├── mark.svg
     │   ├── wordmark.svg
@@ -46,12 +51,12 @@ biki/
 
 | phase | scope | status |
 |-------|-------|--------|
-| 1 — lore | manifesto, origin, character bible | pending |
+| 1 — lore | manifesto, origin, character bible | **done** |
 | 2 — logo | mark, wordmark, lockups, usage rules | **done** |
 | 3 — landing | hero copy, hero structure, sections | **done** (this site) |
 | 4 — design system | color, type, spacing, motion, grain tokens | **done** |
 
-the landing (phase 3) sits on top of the design system (phase 4). no token, no surface.
+the words come first. the logo follows. the landing sits on top of the system. no token, no surface.
 
 ---
 
