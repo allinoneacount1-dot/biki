@@ -1,0 +1,182 @@
+/* BIKI — Design System Tokens
+ * THE source of truth. every value in the brand lives here.
+ * see README.md for philosophy, token map, and usage rules.
+ */
+
+/* ─────────────────────────────────────────────
+ * COLOR — RAW PALETTE
+ * three groups. nine shades. one accent.
+ * ───────────────────────────────────────────── */
+
+:root {
+  /* ink — near-black with cool undertone. breathes. */
+  --color-ink: #0F1012;
+  --color-ink-soft: #1A1C20;
+  --color-ink-mute: #6B6F78;
+
+  /* bone — warm off-white. breathes. */
+  --color-bone: #F4F1EA;
+  --color-bone-soft: #EAE6DD;
+  --color-bone-mute: #D8D3C8;
+
+  /* ochre — the one accent. oxidized amber, threshold-marker. sparing only. */
+  --color-ochre: #9C6B2E;
+  --color-ochre-deep: #7A4F22;
+  --color-ochre-soft: #D4A574;
+}
+
+/* ─────────────────────────────────────────────
+ * COLOR — SEMANTIC ALIASES
+ * always reference these in components.
+ * ───────────────────────────────────────────── */
+
+:root {
+  /* surfaces */
+  --surface-bone: var(--color-bone);
+  --surface-bone-soft: var(--color-bone-soft);
+  --surface-ink: var(--color-ink);
+  --surface-ink-soft: var(--color-ink-soft);
+
+  /* borders */
+  --border-on-bone: var(--color-bone-mute);
+  --border-on-ink: var(--color-ink-soft);
+
+  /* text */
+  --text-on-bone: var(--color-ink);
+  --text-on-bone-mute: var(--color-ink-mute);
+  --text-on-ink: var(--color-bone);
+  --text-on-ink-mute: var(--color-bone-mute);
+
+  /* accent — threshold moments only */
+  --accent: var(--color-ochre);
+  --accent-hover: var(--color-ochre-deep);
+  --accent-tint: var(--color-ochre-soft);
+}
+
+/* ─────────────────────────────────────────────
+ * TYPOGRAPHY
+ * Inter matches the wordmark. JetBrains Mono for technical moments.
+ * hierarchy comes from weight and tracking, not size alone.
+ * ───────────────────────────────────────────── */
+
+:root {
+  --font-sans: 'Inter', 'SF Pro Display', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, monospace;
+
+  /* weights */
+  --weight-regular: 400;
+  --weight-medium: 500;     /* matches wordmark */
+  --weight-semibold: 600;   /* heaviest everyday weight */
+  --weight-bold: 700;       /* hero display only */
+
+  /* tracking */
+  --tracking-tight: -0.02em;
+  --tracking-snug: -0.01em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.04em;
+  --tracking-wider: 0.08em;
+  --tracking-widest: 0.16em; /* for small-caps labels */
+
+  /* size scale — 10 steps */
+  --text-display-xl: 72px;
+  --text-display-lg: 56px;
+  --text-display-md: 40px;
+  --text-heading-lg: 28px;
+  --text-heading-md: 22px;
+  --text-body-lg: 18px;
+  --text-body: 16px;
+  --text-body-sm: 14px;
+  --text-caption: 12px;
+  --text-mono: 13px;
+
+  /* leading — every size carries its own rhythm */
+  --leading-display-xl: 1.05;
+  --leading-display-lg: 1.1;
+  --leading-display-md: 1.15;
+  --leading-heading-lg: 1.25;
+  --leading-heading-md: 1.35;
+  --leading-body-lg: 1.55;
+  --leading-body: 1.6;
+  --leading-body-sm: 1.55;
+  --leading-caption: 1.4;
+  --leading-mono: 1.5;
+}
+
+/* ─────────────────────────────────────────────
+ * SPACING
+ * 4px base. generous by intent. biki is patient.
+ * ───────────────────────────────────────────── */
+
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-24: 96px;
+  --space-32: 128px;
+  --space-48: 192px;
+}
+
+/* ─────────────────────────────────────────────
+ * RADII
+ * mostly zero. the mark is geometric; the system follows.
+ * ───────────────────────────────────────────── */
+
+:root {
+  --radius-none: 0;
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-full: 9999px;
+}
+
+/* ─────────────────────────────────────────────
+ * CONTAINERS
+ * ───────────────────────────────────────────── */
+
+:root {
+  --container-sm: 640px;   /* body text */
+  --container-md: 800px;   /* article */
+  --container-lg: 1024px;  /* feature */
+  --container-xl: 1280px;  /* default landing */
+  --container-2xl: 1440px; /* max landing */
+}
+
+/* ─────────────────────────────────────────────
+ * MOTION
+ * short. decisive. no bounce, no spring.
+ * ───────────────────────────────────────────── */
+
+:root {
+  --duration-instant: 80ms;   /* color swap, opacity */
+  --duration-fast: 150ms;     /* hover states */
+  --duration-base: 220ms;     /* default transitions */
+  --duration-slow: 400ms;     /* page transitions, reveals */
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);     /* default — lands softly */
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);   /* transforms only */
+}
+
+/* ─────────────────────────────────────────────
+ * GRAIN
+ * subtle texture. felt, not seen. large surfaces only.
+ * ───────────────────────────────────────────── */
+
+:root {
+  --grain-opacity: 0.025;     /* 2.5% — the only acceptable value */
+  --grain-blend: multiply;    /* default blend mode */
+}
+
+/* ─────────────────────────────────────────────
+ * Z-INDEX
+ * ───────────────────────────────────────────── */
+
+:root {
+  --z-base: 0;
+  --z-raised: 10;
+  --z-overlay: 100;
+  --z-modal: 1000;
+}

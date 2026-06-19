@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 720" font-family="'Inter','SF Pro Display',system-ui,sans-serif">
+  <title>BIKI — design system swatches</title>
+
+  <!-- background -->
+  <rect width="1000" height="720" fill="#F4F1EA"/>
+
+  <!-- ─────── HEADER ─────── -->
+  <g transform="translate(48,48)">
+    <!-- mini mark -->
+    <g transform="translate(0,0) scale(1)" fill="#0F1012">
+      <circle cx="9" cy="6" r="1.875"/>
+      <circle cx="9" cy="13.5" r="1.875"/>
+      <rect x="4.5" y="20.25" width="9" height="0.75"/>
+    </g>
+    <text x="36" y="16" font-size="14" font-weight="500" letter-spacing="3" fill="#0F1012">BIKI</text>
+  </g>
+
+  <g transform="translate(48,108)">
+    <text font-size="11" font-weight="500" letter-spacing="2" fill="#6B6F78" font-family="'JetBrains Mono',monospace">DESIGN SYSTEM / v1.0.0</text>
+    <text y="38" font-size="32" font-weight="500" letter-spacing="-0.5" fill="#0F1012">color · type · surface</text>
+    <text y="62" font-size="13" fill="#6B6F78">the tokens of the watchful threshold</text>
+  </g>
+
+  <!-- divider -->
+  <line x1="48" y1="208" x2="952" y2="208" stroke="#D8D3C8" stroke-width="1"/>
+
+  <!-- ─────── COLOR ─────── -->
+  <g transform="translate(48,232)">
+    <text font-size="11" font-weight="500" letter-spacing="2" fill="#6B6F78" font-family="'JetBrains Mono',monospace">01 — COLOR</text>
+  </g>
+
+  <!-- color columns: ink / bone / ochre -->
+  <!-- INK -->
+  <g transform="translate(48,272)">
+    <text x="0" y="0" font-size="10" font-weight="500" letter-spacing="2" fill="#0F1012" font-family="'JetBrains Mono',monospace">INK</text>
+    <rect x="0" y="12" width="280" height="56" fill="#0F1012"/>
+    <text x="0" y="86" font-size="11" fill="#6B6F78" font-family="'JetBrains Mono',monospace">PRIMARY  #0F1012</text>
+    <rect x="0" y="100" width="280" height="56" fill="#1A1C20"/>
+    <text x="0" y="174" font-size="11" fill="#6B6F78" font-family="'JetBrains Mono',monospace">SOFT  #1A1C20</text>
+    <rect x="0" y="188" width="280" height="56" fill="#6B6F78"/>
+    <text x="0" y="262" font-size="11" fill="#6B6F78" font-family="'JetBrains Mono',monospace">MUTE  #6B6F78</text>
+  </g>
+
+  <!-- BONE -->
+  <g transform="translate(360,272)">
+    <text x="0" y="0" font-size="10" font-weight="500" letter-spacing="2" fill="#0F1012" font-family="'JetBrains Mono',monospace">BONE</text>
+    <rect x="0" y="12" width="280" height="56" fill="#F4F1EA" stroke="#D8D3C8" stroke-width="0.5"/>
+    <text x="0" y="86" font-size="11" fill="#6B6F78" font-family="'JetBrains Mono',monospace">PRIMARY  #F4F1EA</text>
+    <rect x="0" y="100" width="280" height="56" fill="#EAE6DD"/>
+    <text x="0" y="174" font-size="11" fill="#6B6F78" font-family="'JetBrains Mono',monospace">SOFT  #EAE6DD</text>
+    <rect x="0" y="188" width="280" height="56" fill="#D8D3C8"/>
+    <text x="0" y="262" font-size="11" fill="#6B6F78" font-family="'JetBrains Mono',monospace">MUTE  #D8D3C8</text>
+  </g>
+
+  <!-- OCHRE -->
+  <g transform="translate(672,272)">
+    <text x="0" y="0" font-size="10" font-weight="500" letter-spacing="2" fill="#0F1012" font-family="'JetBrains Mono',monospace">OCHRE</text>
+    <rect x="0" y="12" width="280" height="56" fill="#9C6B2E"/>
+    <text x="0" y="86" font-size="11" fill="#6B6F78" font-family="'JetBrains Mono',monospace">PRIMARY  #9C6B2E</text>
+    <rect x="0" y="100" width="280" height="56" fill="#7A4F22"/>
+    <text x="0" y="174" font-size="11" fill="#6B6F78" font-family="'JetBrains Mono',monospace">DEEP  #7A4F22</text>
+    <rect x="0" y="188" width="280" height="56" fill="#D4A574"/>
+    <text x="0" y="262" font-size="11" fill="#6B6F78" font-family="'JetBrains Mono',monospace">SOFT  #D4A574</text>
+  </g>
+
+  <!-- divider -->
+  <line x1="48" y1="580" x2="952" y2="580" stroke="#D8D3C8" stroke-width="1"/>
+
+  <!-- ─────── SURFACES ─────── -->
+  <g transform="translate(48,604)">
+    <text font-size="11" font-weight="500" letter-spacing="2" fill="#6B6F78" font-family="'JetBrains Mono',monospace">02 — SURFACES</text>
+  </g>
+
+  <!-- mark on bone (left) -->
+  <g transform="translate(48,636)">
+    <rect width="440" height="64" fill="#F4F1EA" stroke="#D8D3C8" stroke-width="0.5"/>
+    <g transform="translate(28,16) scale(1.5)" fill="#0F1012">
+      <circle cx="9" cy="6" r="1.875"/>
+      <circle cx="9" cy="13.5" r="1.875"/>
+      <rect x="4.5" y="20.25" width="9" height="0.75"/>
+    </g>
+    <text x="80" y="40" font-size="13" font-weight="500" letter-spacing="3" fill="#0F1012">BIKI</text>
+    <text x="380" y="40" font-size="10" letter-spacing="1" fill="#6B6F78" font-family="'JetBrains Mono',monospace" text-anchor="end">MARK · BONE</text>
+  </g>
+
+  <!-- mark on ink (right) -->
+  <g transform="translate(512,636)">
+    <rect width="440" height="64" fill="#0F1012"/>
+    <g transform="translate(28,16) scale(1.5)" fill="#F4F1EA">
+      <circle cx="9" cy="6" r="1.875"/>
+      <circle cx="9" cy="13.5" r="1.875"/>
+      <rect x="4.5" y="20.25" width="9" height="0.75"/>
+    </g>
+    <text x="80" y="40" font-size="13" font-weight="500" letter-spacing="3" fill="#F4F1EA">BIKI</text>
+    <text x="412" y="40" font-size="10" letter-spacing="1" fill="#D8D3C8" font-family="'JetBrains Mono',monospace" text-anchor="end">MARK · INK</text>
+  </g>
+</svg>

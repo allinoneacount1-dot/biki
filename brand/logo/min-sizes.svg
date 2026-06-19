@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" role="img" aria-label="BIKI minimum sizes">
+  <title>BIKI — Minimum Sizes</title>
+
+  <g font-family="ui-monospace, 'SF Mono', monospace"
+     font-size="6"
+     fill="currentColor"
+     fill-opacity="0.6"
+     text-anchor="middle">
+
+    <!-- 16px mark -->
+    <g transform="translate(40, 20) scale(0.67)">
+      <circle cx="12" cy="8" r="2.5"/>
+      <circle cx="12" cy="18" r="2.5"/>
+      <rect x="6" y="27" width="12" height="1"/>
+    </g>
+    <text x="40" y="70">16px min (digital)</text>
+
+    <!-- 24px mark -->
+    <g transform="translate(120, 20)">
+      <circle cx="12" cy="8" r="2.5"/>
+      <circle cx="12" cy="18" r="2.5"/>
+      <rect x="6" y="27" width="12" height="1"/>
+    </g>
+    <text x="132" y="70">24px recommended</text>
+
+    <!-- 48px mark -->
+    <g transform="translate(200, 8) scale(2)">
+      <circle cx="12" cy="8" r="2.5"/>
+      <circle cx="12" cy="18" r="2.5"/>
+      <rect x="6" y="27" width="12" height="1"/>
+    </g>
+    <text x="224" y="70">48px hero size</text>
+
+    <!-- 8mm mark hint -->
+    <g transform="translate(280, 20) scale(1.4)">
+      <circle cx="12" cy="8" r="2.5"/>
+      <circle cx="12" cy="18" r="2.5"/>
+      <rect x="6" y="27" width="12" height="1"/>
+    </g>
+    <text x="294" y="70">8mm print min</text>
+  </g>
+</svg>

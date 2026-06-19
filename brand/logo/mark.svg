@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 32" fill="currentColor" role="img" aria-label="BIKI mark">
+  <title>BIKI — The Watchful Threshold</title>
+  <!-- Upper eye -->
+  <circle cx="12" cy="8" r="2.5"/>
+  <!-- Lower eye -->
+  <circle cx="12" cy="18" r="2.5"/>
+  <!-- Threshold -->
+  <rect x="6" y="27" width="12" height="1"/>
+</svg>

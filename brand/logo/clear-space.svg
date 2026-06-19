@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 128" role="img" aria-label="BIKI clear space diagram">
+  <title>BIKI — Clear Space</title>
+
+  <!-- Clear space frame (1u margin on all sides) -->
+  <rect x="4" y="4" width="88" height="120"
+        fill="none"
+        stroke="currentColor"
+        stroke-opacity="0.25"
+        stroke-width="0.5"
+        stroke-dasharray="2,2"/>
+
+  <!-- The mark, with 1u margin from clear space frame -->
+  <g fill="currentColor">
+    <circle cx="48" cy="36" r="10"/>
+    <circle cx="48" cy="76" r="10"/>
+    <rect x="24" y="112" width="48" height="4"/>
+  </g>
+
+  <!-- "x" markers showing 1u clearance -->
+  <g stroke="currentColor" stroke-opacity="0.4" stroke-width="0.5">
+    <line x1="0" y1="4"  x2="4"  y2="4"/>
+    <line x1="4" y1="0"  x2="4"  y2="4"/>
+    <line x1="96" y1="4" x2="92" y2="4"/>
+    <line x1="92" y1="0" x2="92" y2="4"/>
+    <line x1="0" y1="124" x2="4" y2="124"/>
+    <line x1="4" y1="128" x2="4" y2="124"/>
+    <line x1="96" y1="124" x2="92" y2="124"/>
+    <line x1="92" y1="128" x2="92" y2="124"/>
+  </g>
+
+  <!-- Label -->
+  <g font-family="ui-monospace, 'SF Mono', monospace"
+     font-size="4"
+     fill="currentColor"
+     fill-opacity="0.55">
+    <text x="2" y="2">clear space = 1u (= radius)</text>
+  </g>
+</svg>
