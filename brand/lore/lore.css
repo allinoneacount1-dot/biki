@@ -1,0 +1,363 @@
+/* BIKI — lore prose styles
+ * imports the brand design system tokens as the source of truth.
+ * used by every page under /brand/lore/.
+ */
+
+@import url('../design-system/tokens.css');
+
+/* ─────────────────────────────────────────────
+ * PAGE WRAPPER
+ * ───────────────────────────────────────────── */
+
+.lore {
+  max-width: var(--container-md);
+  margin: 0 auto;
+  padding: calc(var(--space-32) + var(--space-6)) var(--space-8) var(--space-32);
+  animation: fade-up var(--duration-slow) var(--ease-out) 0.2s both;
+}
+
+/* nav variant — slightly more transparent over prose pages */
+.nav--lore {
+  background-color: rgba(244, 241, 234, 0.78);
+}
+
+/* ─────────────────────────────────────────────
+ * KICKER + TITLE + LEDE
+ * ───────────────────────────────────────────── */
+
+.lore__kicker {
+  font-family: var(--font-mono);
+  font-size: var(--text-caption);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--text-on-bone-mute);
+  margin-bottom: var(--space-6);
+}
+
+.lore__title {
+  font-size: var(--text-display-lg);
+  line-height: var(--leading-display-lg);
+  letter-spacing: var(--tracking-tight);
+  font-weight: var(--weight-medium);
+  color: var(--text-on-bone);
+  margin-bottom: var(--space-6);
+}
+
+.lore__lede {
+  font-size: var(--text-heading-lg);
+  line-height: var(--leading-heading-lg);
+  letter-spacing: var(--tracking-snug);
+  font-weight: var(--weight-medium);
+  color: var(--text-on-bone);
+  border-left: 1px solid var(--accent);
+  padding: var(--space-2) 0 var(--space-2) var(--space-6);
+  margin: var(--space-12) 0 var(--space-24);
+  font-style: normal;
+}
+
+/* ─────────────────────────────────────────────
+ * DIVIDER
+ * ───────────────────────────────────────────── */
+
+.lore hr {
+  border: none;
+  height: 1px;
+  background-color: var(--border-on-bone);
+  margin: var(--space-16) 0;
+  opacity: 0.6;
+}
+
+/* ─────────────────────────────────────────────
+ * SECTIONS
+ * ───────────────────────────────────────────── */
+
+.lore section {
+  margin: 0;
+}
+
+.lore h2 {
+  font-family: var(--font-mono);
+  font-size: var(--text-caption);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--text-on-bone-mute);
+  margin: 0 0 var(--space-8);
+}
+
+.lore h3 {
+  font-size: var(--text-body-lg);
+  line-height: var(--leading-body-lg);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-snug);
+  color: var(--text-on-bone);
+  margin: var(--space-12) 0 var(--space-4);
+}
+
+.lore p {
+  font-size: var(--text-body-lg);
+  line-height: var(--leading-body-lg);
+  color: var(--text-on-bone);
+  margin-bottom: var(--space-6);
+}
+
+.lore p:last-child {
+  margin-bottom: 0;
+}
+
+.lore strong {
+  font-weight: var(--weight-semibold);
+  color: var(--text-on-bone);
+}
+
+.lore em {
+  color: var(--accent);
+}
+
+/* ─────────────────────────────────────────────
+ * LISTS
+ * ───────────────────────────────────────────── */
+
+.lore__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-8);
+  border-top: 1px solid var(--border-on-bone);
+}
+
+.lore__list li {
+  font-size: var(--text-body-lg);
+  line-height: var(--leading-body-lg);
+  color: var(--text-on-bone);
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--border-on-bone);
+}
+
+.lore__list--reading li {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding: var(--space-6) 0;
+}
+
+.lore__list--reading li a {
+  font-size: var(--text-body-lg);
+  font-weight: var(--weight-medium);
+  color: var(--text-on-bone);
+}
+
+.lore__list--reading li a:hover {
+  color: var(--accent);
+}
+
+.lore__list-meta {
+  font-family: var(--font-mono);
+  font-size: var(--text-caption);
+  letter-spacing: var(--tracking-wide);
+  color: var(--text-on-bone-mute);
+}
+
+.lore ol.lore__list {
+  counter-reset: lore-list;
+}
+
+.lore ol.lore__list > li {
+  counter-increment: lore-list;
+  position: relative;
+  padding-left: var(--space-12);
+}
+
+.lore ol.lore__list > li::before {
+  content: counter(lore-list, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-caption);
+  letter-spacing: var(--tracking-wide);
+  color: var(--text-on-bone-mute);
+}
+
+/* ─────────────────────────────────────────────
+ * TABLE
+ * ───────────────────────────────────────────── */
+
+.lore__table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: var(--space-12) 0;
+  font-size: var(--text-body);
+  line-height: var(--leading-body);
+}
+
+.lore__table th,
+.lore__table td {
+  text-align: left;
+  padding: var(--space-4) var(--space-4) var(--space-4) 0;
+  border-bottom: 1px solid var(--border-on-bone);
+  vertical-align: top;
+}
+
+.lore__table th {
+  font-family: var(--font-mono);
+  font-size: var(--text-caption);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--text-on-bone-mute);
+  border-bottom-color: var(--text-on-bone);
+}
+
+.lore__table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.lore__table td:first-child {
+  width: 32%;
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  letter-spacing: var(--tracking-wide);
+  color: var(--text-on-bone);
+}
+
+/* ─────────────────────────────────────────────
+ * CODE
+ * ───────────────────────────────────────────── */
+
+.lore code {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  color: var(--text-on-bone);
+  background-color: var(--surface-bone-soft);
+  padding: 2px var(--space-1);
+  border-radius: var(--radius-xs);
+}
+
+.lore pre {
+  background-color: var(--surface-bone-soft);
+  border-left: 1px solid var(--accent);
+  padding: var(--space-6) var(--space-8);
+  margin: var(--space-8) 0;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  line-height: var(--leading-mono);
+  color: var(--text-on-bone);
+}
+
+.lore pre code {
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+}
+
+/* ─────────────────────────────────────────────
+ * PREV / NEXT NAV
+ * ───────────────────────────────────────────── */
+
+.lore__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: var(--space-6);
+  margin-top: var(--space-32);
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--border-on-bone);
+}
+
+.lore__nav-link {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  color: var(--text-on-bone);
+  transition: color var(--duration-fast) var(--ease-out);
+}
+
+.lore__nav-link:hover {
+  color: var(--accent);
+}
+
+.lore__nav-link--end {
+  text-align: right;
+  margin-left: auto;
+}
+
+.lore__nav-label {
+  font-family: var(--font-mono);
+  font-size: var(--text-caption);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--text-on-bone-mute);
+}
+
+.lore__nav-title {
+  font-size: var(--text-body-lg);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-snug);
+}
+
+/* ─────────────────────────────────────────────
+ * FOOTER OVERRIDE (current page indicator)
+ * ───────────────────────────────────────────── */
+
+.footer__meta a {
+  color: var(--text-on-bone);
+}
+
+.footer__meta a[aria-current="page"] {
+  color: var(--accent);
+}
+
+/* ─────────────────────────────────────────────
+ * RESPONSIVE
+ * ───────────────────────────────────────────── */
+
+@media (max-width: 720px) {
+  .lore {
+    padding-top: calc(var(--space-24) + var(--space-6));
+    padding-left: var(--space-6);
+    padding-right: var(--space-6);
+  }
+
+  .lore__title {
+    font-size: var(--text-display-md);
+  }
+
+  .lore__lede {
+    font-size: var(--text-heading-md);
+  }
+
+  .lore p,
+  .lore__list li,
+  .lore ol.lore__list > li {
+    font-size: var(--text-body);
+    line-height: var(--leading-body);
+  }
+
+  .lore__nav {
+    flex-direction: column;
+    gap: var(--space-4);
+  }
+
+  .lore__nav-link--end {
+    text-align: left;
+  }
+
+  .lore__table td:first-child {
+    width: auto;
+    display: block;
+    padding-bottom: var(--space-1);
+    border-bottom: none;
+  }
+
+  .lore__table td:last-child {
+    display: block;
+    padding-top: 0;
+  }
+
+  .nav--lore .nav__links {
+    gap: var(--space-4);
+  }
+}

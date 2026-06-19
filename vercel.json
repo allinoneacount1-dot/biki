@@ -1,0 +1,26 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/brand/lore/manifesto.md",
+      "destination": "/brand/lore/manifesto",
+      "permanent": false
+    },
+    {
+      "source": "/brand/lore/origin.md",
+      "destination": "/brand/lore/origin",
+      "permanent": false
+    },
+    {
+      "source": "/brand/lore/character-bible.md",
+      "destination": "/brand/lore/character-bible",
+      "permanent": false
+    },
+    {
+      "source": "/brand/lore/README.md",
+      "destination": "/brand/lore/",
+      "permanent": false
+    }
+  ]
+}

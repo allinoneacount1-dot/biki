@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F4F1EA">
+  <title>BIKI — lore</title>
+  <meta name="description" content="the words. the voice. the threshold.">
+
+  <meta property="og:title" content="BIKI — lore">
+  <meta property="og:description" content="the words. the voice. the threshold.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap">
+
+  <link rel="icon" type="image/svg+xml" href="/brand/logo/mark.svg">
+
+  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/brand/lore/lore.css">
+</head>
+<body>
+  <header class="nav nav--lore">
+    <a href="/" class="nav__mark" aria-label="BIKI — home">
+      <svg class="nav__mark-svg" viewBox="0 0 24 32" aria-hidden="true">
+        <circle cx="12" cy="8" r="2.5" fill="currentColor"/>
+        <circle cx="12" cy="18" r="2.5" fill="currentColor"/>
+        <rect x="6" y="27" width="12" height="1" fill="currentColor"/>
+      </svg>
+      <span class="nav__mark-text">BIKI</span>
+    </a>
+    <nav class="nav__links" aria-label="primary">
+      <a href="/">home</a>
+      <a href="/brand/lore/" aria-current="page">lore</a>
+    </nav>
+  </header>
+
+  <main class="lore" id="top">
+    <p class="lore__kicker">phase 01 — lore</p>
+    <h1 class="lore__title">BIKI</h1>
+    <blockquote class="lore__lede">the words. the voice. the threshold.</blockquote>
+
+    <hr>
+
+    <section>
+      <h2>what is this</h2>
+      <p>this is <strong>phase 1</strong> of the biki build. the words.</p>
+      <p>before the logo. before the landing. before the system. the words.</p>
+      <p>the lore is what makes the rest of the brand legible. every paragraph on the landing, every line of copy, every page heading, every future notification — all draw from here. if a sentence does not fit the lore, do not ship it.</p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>the three parts</h2>
+<pre><code>lore/
+├── README.md          ← you are here (index + order of reading)
+├── manifesto.md       ← the belief. what biki is for.
+├── origin.md          ← the history. why biki exists.
+└── character-bible.md ← the voice. how biki speaks.</code></pre>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>read in order</h2>
+      <ol class="lore__list lore__list--reading">
+        <li>
+          <a href="/brand/lore/manifesto">manifesto</a>
+          <span class="lore__list-meta">the belief. what biki is for.</span>
+        </li>
+        <li>
+          <a href="/brand/lore/origin">origin</a>
+          <span class="lore__list-meta">the history. why biki exists.</span>
+        </li>
+        <li>
+          <a href="/brand/lore/character-bible">character bible</a>
+          <span class="lore__list-meta">the voice. how biki speaks.</span>
+        </li>
+      </ol>
+      <p>the three together form the spine of the brand. out of order, they read as fragments.</p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>how the rest of the brand uses this</h2>
+      <table class="lore__table">
+        <thead>
+          <tr><th>surface</th><th>draws from</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>landing copy</td><td>manifesto + character bible</td></tr>
+          <tr><td>social posts</td><td>character bible</td></tr>
+          <tr><td>future product UI</td><td>origin + character bible</td></tr>
+          <tr><td>future docs / changelogs</td><td>manifesto + character bible</td></tr>
+          <tr><td>press / interviews</td><td>origin + manifesto</td></tr>
+        </tbody>
+      </table>
+      <p>the logo and the design system <strong>follow</strong> the lore, not the other way around. the mark is monochrome because the lore says so. the system is restrained because the lore says so. the words come first.</p>
+    </section>
+
+    <hr>
+
+    <section>
+      <h2>the principle, restated</h2>
+      <p>biki sits at the threshold.</p>
+      <p>everything biki does — every word, every glyph, every motion — sits at the threshold too. the lore is the documentation of that sitting. it is the record of what the threshold is, why it is there, and how to speak from it without breaking it.</p>
+      <p>when in doubt, return here.<br>read the three parts again.<br>write the sentence that fits.<br>ship nothing else.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__mark">
+      <svg viewBox="0 0 24 32" aria-hidden="true">
+        <circle cx="12" cy="8" r="2.5" fill="currentColor"/>
+        <circle cx="12" cy="18" r="2.5" fill="currentColor"/>
+        <rect x="6" y="27" width="12" height="1" fill="currentColor"/>
+      </svg>
+    </div>
+    <div class="footer__meta">
+      <a href="/brand/lore/" aria-current="page">lore</a>
+      <span class="footer__divider">·</span>
+      <span>© BIKI</span>
+      <span class="footer__divider">·</span>
+      <span>all presence reserved</span>
+    </div>
+  </footer>
+</body>
+</html>
